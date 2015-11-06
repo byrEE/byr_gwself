@@ -34,13 +34,9 @@ def login():
         if info==test_str:
             print('login successful')
             print('*********************')
-            print('query your info please input y for yes, other for no')
+            print('your info is:')
+            query_info()
             print('*********************')
-            a=input('please input y or other:\n')
-            if a=='y' or a=='Y':
-                query_info()
-            else:
-                sys.exit()
 
         else:
             print('学号或密码不对，请重新输入： ')
